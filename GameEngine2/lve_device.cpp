@@ -48,11 +48,11 @@ void DestroyDebugUtilsMessengerEXT(
 
 // class member functions
 LveDevice::LveDevice(LveWindow &window) : window{window} {
-  createInstance();
-  setupDebugMessenger();
-  createSurface();
-  pickPhysicalDevice();
-  createLogicalDevice();
+  createInstance(); // create Vulkan Instance
+  setupDebugMessenger(); // validation layers, delete later
+  createSurface(); //connection between window and vulkan
+  pickPhysicalDevice(); //pick gpu
+  createLogicalDevice(); //feature of physical device  שש
   createCommandPool();
 }
 
