@@ -17,6 +17,7 @@ namespace lve {
 		LveWindow &operator=(const LveWindow &) = delete; //per evitare che la glfwwindow sia chiusa per tutte le finestre di lve, se una sola lve viene chiusa
 
 		bool shouldClose() { return glfwWindowShouldClose(window); }
+		VkExtent2D getExtent() { return { static_cast<uint32_t>(width), static_cast<uint32_t>(height) }; }
 
 		void createWindowSurface(VkInstance instance, VkSurfaceKHR *surface);
 

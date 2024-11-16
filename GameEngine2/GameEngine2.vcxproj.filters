@@ -30,6 +30,9 @@
     <ClCompile Include="lve_device.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="lve_swap_chain.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lve_window.hpp">
@@ -42,6 +45,9 @@
       <Filter>File di intestazione</Filter>
     </ClInclude>
     <ClInclude Include="lve_device.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="lve_swap_chain.hpp">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
